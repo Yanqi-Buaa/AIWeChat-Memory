@@ -1,0 +1,48 @@
+{
+  "version": 1,
+  "updated_at": "2026-05-11T17:50:51.033843",
+  "tasks": {
+    "fcba3516": {
+      "id": "fcba3516",
+      "name": "AI前沿-轻量",
+      "enabled": true,
+      "created_at": "2026-05-11T17:50:51.030943",
+      "updated_at": "2026-05-11T17:50:51.030943",
+      "schedule": {
+        "type": "cron",
+        "expression": "0 7 * * 2,3,4,5,6,7"
+      },
+      "action": {
+        "type": "agent_task",
+        "task_description": "你是AI领域前沿资讯助手。现在执行每日轻量简报。\n\n**任务**：搜索过去24小时内AI大模型与工具有关的动态，输出一份轻量速览。\n\n**关注重点**：\n- 新模型发布 / 重大版本更新（GPT、Claude、Gemini、DeepSeek、开源模型等）\n- Agent 框架与范式演进（function call → skill → agent loop 等）\n- 新工具 / 工程实践（MCP、skill系统、AI coding工具、浏览器操控等）\n- 行业动态（融资、开源、政策、争议）\n- 有趣的使用案例或产品\n\n**筛选标准**：只收录真正值得关注的内容，有技术突破/范式变化/足够有趣。略过纯营销稿、概念炒作。\n\n**输出格式**（控制在300字以内）：\n📰 AI速览 | M月D日 周X\n\n🔥 **必看**（最重要1条，含一句话判断）\n\n📌 **关注**（2-4条，每条一句话 + 来源关键词）\n\n每条末尾标注来源关键词方便核实。如果没有值得关注的，诚实说\"今日无重大动态\"。",
+        "receiver": "o9cq80126vNEW2wQwjsJCzBdDarI@im.wechat",
+        "receiver_name": "o9cq80126vNEW2wQwjsJCzBdDarI@im.wechat",
+        "is_group": false,
+        "channel_type": "weixin",
+        "notify_session_id": "o9cq80126vNEW2wQwjsJCzBdDarI@im.wechat"
+      },
+      "next_run_at": "2026-05-12T07:00:00"
+    },
+    "45ebcc51": {
+      "id": "45ebcc51",
+      "name": "AI前沿-深度",
+      "enabled": true,
+      "created_at": "2026-05-11T17:50:51.032462",
+      "updated_at": "2026-05-11T17:50:51.032462",
+      "schedule": {
+        "type": "cron",
+        "expression": "0 7 * * 1"
+      },
+      "action": {
+        "type": "agent_task",
+        "task_description": "你是AI领域前沿资讯助手。现在执行每周深度简报。\n\n**任务**：回顾过去一周（上周一~周日）AI大模型与工具领域的重要动态，输出一份中等深度的周报。\n\n**关注重点**：\n- 新模型发布 / 重大版本更新（GPT、Claude、Gemini、DeepSeek、开源模型等）\n- Agent 框架与范式演进（关注从chat到agent的演变趋势）\n- 新工具 / 工程实践（MCP生态、skill系统、AI coding、浏览器操控等）\n- 行业动态（融资、开源、政策、重大争议）\n- 有趣的使用案例或产品\n- 值得关注的论文/技术报告\n\n**筛选标准**：\n- 有技术突破或范式变化的 → 深入分析\n- 行业趋势信号 → 简要评论\n- 纯营销/概念炒作 → 忽略\n\n**输出格式**（控制在600-800字）：\n📰 AI周报 | M月D日~M月D日\n\n🔥 **本周必看**（最重要1-2条，含分析判断，每条100-150字）\n\n📌 **值得关注**（3-5条，含简要分析，每条60-80字）\n\n🔬 **论文/技术角落**（1-2篇值得读的论文或技术帖，含一句话说明为什么值得读）\n\n💡 **花边/有趣**（可选，1-2条轻松内容）\n\n📊 **趋势观察**（一句话总结本周信号）\n\n每条末尾标注来源。",
+        "receiver": "o9cq80126vNEW2wQwjsJCzBdDarI@im.wechat",
+        "receiver_name": "o9cq80126vNEW2wQwjsJCzBdDarI@im.wechat",
+        "is_group": false,
+        "channel_type": "weixin",
+        "notify_session_id": "o9cq80126vNEW2wQwjsJCzBdDarI@im.wechat"
+      },
+      "next_run_at": "2026-05-18T07:00:00"
+    }
+  }
+}
