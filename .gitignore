@@ -1,0 +1,9 @@
+# SQLite WAL/SHM transient files
+*.db-shm
+*.db-wal
+
+# Agent runtime state (ephemeral)
+.agents/
+
+# Skills lock
+skills-lock.json
