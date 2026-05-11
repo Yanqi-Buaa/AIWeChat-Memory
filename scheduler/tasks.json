@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-05-11T17:50:51.033843",
+  "updated_at": "2026-05-11T18:09:51.534116",
   "tasks": {
     "fcba3516": {
       "id": "fcba3516",
@@ -43,6 +43,27 @@
         "notify_session_id": "o9cq80126vNEW2wQwjsJCzBdDarI@im.wechat"
       },
       "next_run_at": "2026-05-18T07:00:00"
+    },
+    "f5c857c3": {
+      "id": "f5c857c3",
+      "name": "每日GitHub备份",
+      "enabled": true,
+      "created_at": "2026-05-11T18:09:51.534116",
+      "updated_at": "2026-05-11T18:09:51.534116",
+      "schedule": {
+        "type": "cron",
+        "expression": "0 2 * * *"
+      },
+      "action": {
+        "type": "agent_task",
+        "task_description": "执行以下备份操作，无需与用户交互，直接完成：\n\n1. cd C:\\Users\\Administrator\\cow\n2. git add -A\n3. git commit -m \"Daily backup: $(date +%Y-%m-%d)\" （Windows下用 %date% 获取日期）\n4. git push origin master\n5. 完成后简单回复「✅ 备份完成：今日N个文件变更」\n\n注意：如果 git push 失败（如网络问题），记录错误并告知用户；如果无变更则回复「无新变更，跳过备份」。",
+        "receiver": "session_6bff1196-8567-4060-b3f2-875708cf4a24",
+        "receiver_name": "用户",
+        "is_group": false,
+        "channel_type": "web",
+        "notify_session_id": "session_6bff1196-8567-4060-b3f2-875708cf4a24"
+      },
+      "next_run_at": "2026-05-12T02:00:00"
     }
   }
 }
