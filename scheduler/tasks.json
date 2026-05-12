@@ -1,13 +1,13 @@
 {
   "version": 1,
-  "updated_at": "2026-05-11T18:09:51.534116",
+  "updated_at": "2026-05-12T12:09:03.769714",
   "tasks": {
     "fcba3516": {
       "id": "fcba3516",
       "name": "AI前沿-轻量",
       "enabled": true,
       "created_at": "2026-05-11T17:50:51.030943",
-      "updated_at": "2026-05-11T17:50:51.030943",
+      "updated_at": "2026-05-12T07:01:49.299230",
       "schedule": {
         "type": "cron",
         "expression": "0 7 * * 2,3,4,5,6,7"
@@ -21,7 +21,8 @@
         "channel_type": "weixin",
         "notify_session_id": "o9cq80126vNEW2wQwjsJCzBdDarI@im.wechat"
       },
-      "next_run_at": "2026-05-12T07:00:00"
+      "next_run_at": "2026-05-13T07:00:00",
+      "last_run_at": "2026-05-12T07:00:01.257585"
     },
     "45ebcc51": {
       "id": "45ebcc51",
@@ -49,7 +50,7 @@
       "name": "每日GitHub备份",
       "enabled": true,
       "created_at": "2026-05-11T18:09:51.534116",
-      "updated_at": "2026-05-11T18:09:51.534116",
+      "updated_at": "2026-05-12T02:01:00.641508",
       "schedule": {
         "type": "cron",
         "expression": "0 2 * * *"
@@ -63,7 +64,29 @@
         "channel_type": "web",
         "notify_session_id": "session_6bff1196-8567-4060-b3f2-875708cf4a24"
       },
-      "next_run_at": "2026-05-12T02:00:00"
+      "next_run_at": "2026-05-13T02:00:00",
+      "last_run_at": "2026-05-12T02:00:23.486264"
+    },
+    "9cab80ef": {
+      "id": "9cab80ef",
+      "name": "准备签证材料",
+      "enabled": true,
+      "created_at": "2026-05-12T12:09:03.767698",
+      "updated_at": "2026-05-12T12:09:03.767698",
+      "schedule": {
+        "type": "once",
+        "run_at": "2026-05-12T15:00:00+08:00"
+      },
+      "action": {
+        "type": "send_message",
+        "content": "🔔 下午三点啦！去准备签证材料吧 📋",
+        "receiver": "o9cq80126vNEW2wQwjsJCzBdDarI@im.wechat",
+        "receiver_name": "o9cq80126vNEW2wQwjsJCzBdDarI@im.wechat",
+        "is_group": false,
+        "channel_type": "weixin",
+        "notify_session_id": "o9cq80126vNEW2wQwjsJCzBdDarI@im.wechat"
+      },
+      "next_run_at": "2026-05-12T15:00:00+08:00"
     }
   }
 }

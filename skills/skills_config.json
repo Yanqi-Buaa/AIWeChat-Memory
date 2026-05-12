@@ -29,7 +29,14 @@
     },
     "info-gate": {
         "name": "info-gate",
-        "description": "Information gate that ensures complete requirements before generating any plan, program, scheme, or decision. Use when the user asks for a plan and key information is missing, ambiguous, or conflicting — proactively detect gaps, formulate questions, and resolve them before proceeding. Trigger scenarios: (1) User requests a plan/program/scheme, (2) Requirements appear incomplete, (3) Multiple valid interpretations exist, (4) User wants to avoid mismatched output. NOT for: simple facts, one-off answers, spontaneous conversation.",
+        "description": "Information gate: ALWAYS invoke BEFORE generating any plan, program, scheme, or decision. Trigger keywords: 方案, 计划, plan, scheme, 制定, 设计, 规划, proposal, 路线图. Do NOT first judge whether information is \"sufficient\" — the gate's job IS to discover gaps. If any trigger keyword is present, stop and run the gate workflow (scan → ask → confirm → generate). NOT for: simple facts, one-off answers, spontaneous conversation. NOTE: Pair with a rule in RULE.md (see \"info-gate\" section) for guaranteed enforcement.",
+        "source": "custom",
+        "enabled": true,
+        "category": "skill"
+    },
+    "ref-downloader": {
+        "name": "ref-downloader",
+        "description": "Use when the user asks to batch-download all references for a paper from a DOI or local PDF with ref-downloader. Not for one-off PDFs, paper search, or Zotero import.",
         "source": "custom",
         "enabled": true,
         "category": "skill"

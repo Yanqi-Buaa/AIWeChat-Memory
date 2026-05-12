@@ -1,18 +1,22 @@
 ---
 name: info-gate
 description: >-
-  Information gate that ensures complete requirements before generating any plan, program, scheme,
-  or decision. Use when the user asks for a plan and key information is missing, ambiguous,
-  or conflicting — proactively detect gaps, formulate questions, and resolve them before proceeding.
-  Trigger scenarios: (1) User requests a plan/program/scheme, (2) Requirements appear incomplete,
-  (3) Multiple valid interpretations exist, (4) User wants to avoid mismatched output.
+  Information gate: ALWAYS invoke BEFORE generating any plan, program, scheme, or decision.
+  Trigger keywords: 方案, 计划, plan, scheme, 制定, 设计, 规划, proposal, 路线图.
+  Do NOT first judge whether information is "sufficient" — the gate's job IS to discover gaps.
+  If any trigger keyword is present, stop and run the gate workflow (scan → ask → confirm → generate).
   NOT for: simple facts, one-off answers, spontaneous conversation.
+  NOTE: Pair with a rule in RULE.md (see "info-gate" section) for guaranteed enforcement.
 ---
 
 # Info Gate
 
 Gatekeeper that ensures all necessary information is collected before generating output.
 No plan leaves the gate until requirements are confirmed.
+
+> **💡 建议配合 Rule 使用**：在 `RULE.md` 中添加 `info-gate` 章节，
+> 确保 AI 在每次对话中都记得"遇方案先过 gate"。
+> Skill 的触发依赖 agent 主动匹配关键词，Rule 提供强制兜底。
 
 ## Core Principle
 
