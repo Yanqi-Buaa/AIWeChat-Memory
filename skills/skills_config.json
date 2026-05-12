@@ -54,5 +54,33 @@
         "source": "custom",
         "enabled": true,
         "category": "skill"
+    },
+    "wps-excel": {
+        "name": "wps-excel",
+        "description": "WPS 表格智能助手，通过自然语言操控 Excel，解决公式编写、数据清洗、图表创建等痛点问题",
+        "source": "custom",
+        "enabled": true,
+        "category": "skill"
+    },
+    "wps-office": {
+        "name": "wps-office",
+        "description": "WPS Office 跨应用智能助手，统一管理 Excel、Word、PPT 三大应用，处理跨应用操作和通用功能",
+        "source": "custom",
+        "enabled": true,
+        "category": "skill"
+    },
+    "wps-ppt": {
+        "name": "wps-ppt",
+        "description": "WPS 演示智能助手，通过自然语言操控 PPT，解决排版美化、内容生成、动画设置等痛点问题",
+        "source": "custom",
+        "enabled": true,
+        "category": "skill"
+    },
+    "wps-word": {
+        "name": "wps-word",
+        "description": "WPS 文字智能助手，通过自然语言操控 Word 文档，解决排版、格式、内容编辑等痛点问题",
+        "source": "custom",
+        "enabled": true,
+        "category": "skill"
     }
 }
