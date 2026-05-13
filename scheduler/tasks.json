@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-05-13T20:19:26.106533",
+  "updated_at": "2026-05-13T20:45:30.425407",
   "tasks": {
     "fcba3516": {
       "id": "fcba3516",
@@ -45,27 +45,31 @@
       },
       "next_run_at": "2026-05-18T07:00:00"
     },
-    "f5c857c3": {
-      "id": "f5c857c3",
-      "name": "每日GitHub备份",
+    "76011f16": {
+      "id": "76011f16",
+      "name": "每日Git备份-双仓库",
       "enabled": true,
-      "created_at": "2026-05-11T18:09:51.534116",
-      "updated_at": "2026-05-13T08:25:05.174057",
+      "created_at": "2026-05-13T20:45:30.423900",
+      "updated_at": "2026-05-13T20:45:30.423900",
       "schedule": {
         "type": "cron",
         "expression": "0 2 * * *"
       },
       "action": {
         "type": "agent_task",
-        "task_description": "执行以下备份操作，无需与用户交互，直接完成：\n\n1. cd C:\\Users\\Administrator\\cow\n2. git add -A\n3. git commit -m \"Daily backup: $(date +%Y-%m-%d)\" （Windows下用 %date% 获取日期）\n4. git push origin master\n5. 完成后简单回复「✅ 备份完成：今日N个文件变更」\n\n注意：如果 git push 失败（如网络问题），记录错误并告知用户；如果无变更则回复「无新变更，跳过备份」。",
+        "task_description": "执行以下备份操作，无需与用户交互，直接完成：\n\n**仓库1 — 记忆/配置（AIWeChat-Memory）**\ngit -C \"C:\\Users\\Administrator\\cow\" add -A\ngit -C \"C:\\Users\\Administrator\\cow\" commit -m \"Daily backup: %date%\"\ngit -C \"C:\\Users\\Administrator\\cow\" push origin master\n\n**仓库2 — 程序代码（AIWeChat）**\ngit -C \"A:\\AIWeChat\\CowAgent\" add -A\ngit -C \"A:\\AIWeChat\\CowAgent\" commit -m \"Daily backup: %date%\"\ngit -C \"A:\\AIWeChat\\CowAgent\" push origin master\n\n完成后按以下规则回复：\n- 两个仓库都有变更 → 「✅ 双仓库备份完成：Memory N个文件 | 程序 M个文件」\n- 只有其中一个有变更 → 「✅ 备份完成：Memory XX变更 / 程序 无变更」（反之亦然）\n- 都无变更 → 「✅ 备份完成：两仓库均无新变更，跳过」\n- 有推送失败 → 记录具体错误信息告知用户",
         "receiver": "session_6bff1196-8567-4060-b3f2-875708cf4a24",
         "receiver_name": "用户",
         "is_group": false,
         "channel_type": "web",
         "notify_session_id": "session_6bff1196-8567-4060-b3f2-875708cf4a24"
       },
-      "next_run_at": "2026-05-14T02:00:00",
-      "last_run_at": "2026-05-12T02:00:23.486264"
+      "route": {
+        "type": "wechat_user",
+        "identifier": "o9cq80126vNEW2wQwjsJCzBdDarI@im.wechat",
+        "display_name": "YQ"
+      },
+      "next_run_at": "2026-05-14T02:00:00"
     }
   }
 }
