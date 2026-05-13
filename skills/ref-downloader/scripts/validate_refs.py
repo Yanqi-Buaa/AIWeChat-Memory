@@ -23,6 +23,8 @@ import urllib.error
 from pathlib import Path
 from datetime import datetime
 
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+
 from _config import load_config, user_agent_from, warn_if_placeholder_mailto
 
 API_BASE = "https://api.crossref.org/works"

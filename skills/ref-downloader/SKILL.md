@@ -22,9 +22,14 @@ The skill protocol can't manage Python deps. If `python -c "import playwright"` 
 ```bash
 cd "<SKILL_DIR>"
 pip install playwright pymupdf
-playwright install msedge          # downloads Edge driver
+playwright install chromium        # YQ: installed Chromium (Edge path failed)
 cp config.example.toml config.local.toml   # then user edits [crossref].mailto
 ```
+
+**⚠️ YQ 环境特定配置**：
+- 使用 **Chromium** 而非 Edge（`channel="chromium"` 已在 `download_refs.py` 中修改）
+- 使用 Chrome 用户数据目录：设置环境变量 `REF_DOWNLOADER_EDGE_PROFILE=%LOCALAPPDATA%\Google\Chrome\User Data`
+- 4 个脚本（`run_ref_downloader.py`、`extract_refs.py`、`validate_refs.py`、`download_refs.py`）已添加 `sys.path.insert(0, str(Path(__file__).resolve().parent))` 确保 Python 能找到同目录模块
 
 If the user is developing from the source repo instead of an installed skill copy, they can also install from the repo root with `pip install -r requirements.txt -r requirements-dev.txt`.
 

@@ -50,6 +50,8 @@ from playwright.async_api import BrowserContext, Page, async_playwright, Error a
 
 from functools import lru_cache
 
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+
 from _config import load_config, InstitutionConfig
 
 # Institution-specific patterns are loaded from config.local.toml at startup
@@ -3307,7 +3309,7 @@ async def launch_edge_context(pw) -> BrowserContext:
 
     return await pw.chromium.launch_persistent_context(
         get_edge_user_data_dir(),
-        channel="msedge",
+        channel="chromium",
         headless=False,
         accept_downloads=True,
         args=launch_args,

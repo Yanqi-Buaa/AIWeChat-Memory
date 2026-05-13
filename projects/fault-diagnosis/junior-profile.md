@@ -18,6 +18,13 @@
 - ✅ PyTorch 项目结构搭建（config YAML、实验管理、模型对比）
 - ✅ 虚拟环境管理（venv）
 
+## 当前任务
+
+- **进行中**：多标签频谱分类（Multi-label ComparisonNet）
+  - 技术点：BCEWithLogitsLoss / Hamming Loss / 复用 Comparator
+  - 启动时间：2026-05-13
+  - 状态：等待交付
+
 ## 已完成项目
 
 1. **Iris 分类练手** — 入门级，熟悉基本流程

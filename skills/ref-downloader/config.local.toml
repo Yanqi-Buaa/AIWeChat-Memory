@@ -1,0 +1,16 @@
+[crossref]
+mailto = "yan_qi@buaa.edu.cn"
+
+[zotero]
+db_path = ""
+
+[browser]
+edge_profile_dir = ""
+disable_extensions = false
+
+[institution]
+auth_hosts          = []
+auth_url_fragments  = []
+auth_page_titles    = []
+auth_loading_titles = []
+ignored_access_dois = []
