@@ -1,13 +1,13 @@
 {
   "version": 1,
-  "updated_at": "2026-05-13T20:45:30.425407",
+  "updated_at": "2026-05-14T10:24:49.958474",
   "tasks": {
     "fcba3516": {
       "id": "fcba3516",
       "name": "AI前沿-轻量",
       "enabled": true,
       "created_at": "2026-05-11T17:50:51.030943",
-      "updated_at": "2026-05-13T08:25:05.176564",
+      "updated_at": "2026-05-14T09:31:40.571371",
       "schedule": {
         "type": "cron",
         "expression": "0 7 * * 2,3,4,5,6,7"
@@ -21,7 +21,7 @@
         "channel_type": "weixin",
         "notify_session_id": "o9cq80126vNEW2wQwjsJCzBdDarI@im.wechat"
       },
-      "next_run_at": "2026-05-14T07:00:00",
+      "next_run_at": "2026-05-15T07:00:00",
       "last_run_at": "2026-05-12T07:00:01.257585"
     },
     "45ebcc51": {
@@ -50,7 +50,7 @@
       "name": "每日Git备份-双仓库",
       "enabled": true,
       "created_at": "2026-05-13T20:45:30.423900",
-      "updated_at": "2026-05-13T20:45:30.423900",
+      "updated_at": "2026-05-14T09:31:40.570364",
       "schedule": {
         "type": "cron",
         "expression": "0 2 * * *"
@@ -69,7 +69,7 @@
         "identifier": "o9cq80126vNEW2wQwjsJCzBdDarI@im.wechat",
         "display_name": "YQ"
       },
-      "next_run_at": "2026-05-14T02:00:00"
+      "next_run_at": "2026-05-15T02:00:00"
     }
   }
 }

@@ -5,9 +5,8 @@
 
 ## 健身
 - 健身档案与训练日志已迁移至 [knowledge/fitness/](knowledge/fitness/) → [档案](knowledge/fitness/profile.md) | [日志](knowledge/fitness/log.md)
-- **当前总次数**: 第32次（2026-05-12 腿日）
-- **第33次**: 5月14日周四（拉日——四模板轮转首日）
-- **5月14日周四起**: 正式启动四模板轮转计划（拉→推A→腿→推B），第33次开始
+- **当前总次数**: 第33次（2026-05-14 拉日 ✓）
+- **第34次**: 下次推A日（胸）
 - **记录要求**: 每次训练后汇报数据，需标注第几次训练
 ## 项目管理
 - 师弟协作项目档案存放于 `projects/` 目录，与个人记忆/知识库隔离，具体内容直接读该目录文件
@@ -16,6 +15,19 @@
 - **话题-1 [AI前沿]**: 轻量简报 Tue-Sun 早7:00，深度简报 Mon 早7:00
 - **调度方式**: 用户自行在scheduler中创建任务，从config/topics.md复制对应prompt到ai_task参数
 - **扩展**: 新增话题只需在config/topics.md照模板添加，再创建对应scheduler任务即可
+## 重启流程
+当YQ说「重启」「cow restart」「cow start」时：
+1. **先确认旧 cmd 窗口已关闭** — 否则 `cow start` 报 `Permission denied: nohup.out`（旧进程占住文件）
+2. 在命令行执行 `cow start`
+3. 如需发重启通知 → app.py 启动时读 `pending_notify.json` → 写 `scripts/.delayed_notify.txt` → YQ发一条消息后自动送达
+4. 看门狗托管重启：写 `pending_notify.json` → 创建一次性 schtasks（30s 后触发）→ 自杀 → 看门狗兜底
+5. ⚠️ 看门狗已修复自毁 bug：watchdog.bat 末尾执行 `schtasks /Delete`，跑完不再弹窗
 ## 项目特性
 - 已实现功能、待开发功能、技能安装记录等均记录在 `A:\AIWeChat\CowAgent\FEATURES.md`
 - **规则**: 每次实现新功能或讨论功能构想时，同步更新 FEATURES.md
+
+## 服务器信息
+- **主节点**: `ssh yanqi@172.17.135.116` → 再从主节点 `ssh -X gpu1`（gpu1 无独立IP）
+- **工作目录**: `/data/yanqi/PINNs/`
+- **tmux 会话名**: `deepseek`（在 gpu1 上）
+- **任务简报**: 用 `find` 定位 `runtime_brief*` 文件，不固定在单一路径
