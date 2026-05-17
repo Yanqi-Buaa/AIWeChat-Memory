@@ -1,13 +1,13 @@
 {
   "version": 1,
-  "updated_at": "2026-05-16T17:35:16.063203",
+  "updated_at": "2026-05-17T14:00:19.692551",
   "tasks": {
     "fcba3516": {
       "id": "fcba3516",
       "name": "AI前沿-轻量",
       "enabled": true,
       "created_at": "2026-05-11T17:50:51.030943",
-      "updated_at": "2026-05-16T07:01:12.049166",
+      "updated_at": "2026-05-17T07:08:12.444105",
       "schedule": {
         "type": "cron",
         "expression": "0 7 * * 2,3,4,5,6,7"
@@ -21,8 +21,8 @@
         "channel_type": "weixin",
         "notify_session_id": "o9cq80126vNEW2wQwjsJCzBdDarI@im.wechat"
       },
-      "next_run_at": "2026-05-17T07:00:00",
-      "last_run_at": "2026-05-16T07:00:19.806756"
+      "next_run_at": "2026-05-19T07:00:00",
+      "last_run_at": "2026-05-17T07:00:22.226696"
     },
     "45ebcc51": {
       "id": "45ebcc51",
@@ -50,7 +50,7 @@
       "name": "每日Git备份-双仓库",
       "enabled": true,
       "created_at": "2026-05-13T20:45:30.423900",
-      "updated_at": "2026-05-16T02:00:48.822308",
+      "updated_at": "2026-05-17T02:01:57.701357",
       "schedule": {
         "type": "cron",
         "expression": "0 2 * * *"
@@ -69,8 +69,8 @@
         "identifier": "o9cq80126vNEW2wQwjsJCzBdDarI@im.wechat",
         "display_name": "YQ"
       },
-      "next_run_at": "2026-05-17T02:00:00",
-      "last_run_at": "2026-05-16T02:00:23.160518"
+      "next_run_at": "2026-05-18T02:00:00",
+      "last_run_at": "2026-05-17T02:00:19.282404"
     }
   }
 }
