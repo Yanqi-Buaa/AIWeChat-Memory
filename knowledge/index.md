@@ -9,3 +9,4 @@
 
 ## 🧠 生物力学 & 训练原理
 - [器械外展 vs 滑雪轴转](concepts/hip-abduction-ski-mechanics.md) — 臀中肌三束解剖、冠状面vs水平面、补缺策略
+- [屈踝受限 — 小腿前后侧肌力不平衡](concepts/ankle-dorsiflexion-imbalance.md) — 胫骨前肌vs腓肠肌/比目鱼肌的力量拔河，深蹲前扑的根源之一

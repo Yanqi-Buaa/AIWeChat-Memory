@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-05-17T14:00:19.692551",
+  "updated_at": "2026-05-18T07:02:54.488832",
   "tasks": {
     "fcba3516": {
       "id": "fcba3516",
@@ -29,7 +29,7 @@
       "name": "AI前沿-深度",
       "enabled": true,
       "created_at": "2026-05-11T17:50:51.032462",
-      "updated_at": "2026-05-11T17:50:51.032462",
+      "updated_at": "2026-05-18T07:02:54.487825",
       "schedule": {
         "type": "cron",
         "expression": "0 7 * * 1"
@@ -43,14 +43,15 @@
         "channel_type": "weixin",
         "notify_session_id": "o9cq80126vNEW2wQwjsJCzBdDarI@im.wechat"
       },
-      "next_run_at": "2026-05-18T07:00:00"
+      "next_run_at": "2026-05-25T07:00:00",
+      "last_run_at": "2026-05-18T07:00:18.933055"
     },
     "76011f16": {
       "id": "76011f16",
       "name": "每日Git备份-双仓库",
       "enabled": true,
       "created_at": "2026-05-13T20:45:30.423900",
-      "updated_at": "2026-05-17T02:01:57.701357",
+      "updated_at": "2026-05-18T02:00:47.875891",
       "schedule": {
         "type": "cron",
         "expression": "0 2 * * *"
@@ -69,8 +70,8 @@
         "identifier": "o9cq80126vNEW2wQwjsJCzBdDarI@im.wechat",
         "display_name": "YQ"
       },
-      "next_run_at": "2026-05-18T02:00:00",
-      "last_run_at": "2026-05-17T02:00:19.282404"
+      "next_run_at": "2026-05-19T02:00:00",
+      "last_run_at": "2026-05-18T02:00:08.033145"
     }
   }
 }
